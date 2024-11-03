@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "name": "Kettle",
+      "price": 20,
+      "description": "A stainless steel kettle.",
+      "image": "/images/kettle.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Toaster",
+      "price": 25,
+      "description": "A 2-slice toaster.",
+      "image": "/images/toaster.avif"
+    },
+    {
+        "id": 3,
+        "name": "Spoon",
+        "price": 10,
+        "description": "A single Spoon.",
+        "image": "/images/spoon.jpg"
+
+    },
+    {
+        "id": 4,
+        "name": "Bread maker",
+        "price": 200,
+        "description": "A Bread maker to make bread for you",
+        "image": "/images/breadmaker.jpg"
+
+    },
+    {
+        "id": 5,
+        "name": "Spoon",
+        "price": 10,
+        "description": "A single Spoon.",
+        "image": "/images/spoon.jpg"
+
+    }
+  ]
+  

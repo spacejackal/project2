@@ -1,0 +1,39 @@
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 300px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limits image height */
+    object-fit: cover; /* Ensures images are scaled without distortion */
+    border-radius: 5px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 1rem;
+    margin-left: 50px;
+  }
+  .top{
+    margin-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  
