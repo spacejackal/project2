@@ -31,10 +31,18 @@
     },
     {
         "id": 5,
-        "name": "Spoon",
-        "price": 10,
-        "description": "A single Spoon.",
-        "image": "/images/spoon.jpg"
+        "name": "Fridge",
+        "price": 1000,
+        "description": "A Large and haunted Fridge.",
+        "image": "/images/fridge.jpg"
+
+    },
+    {
+        "id": 6,
+        "name": "Bowl",
+        "price": 873,
+        "description": "A Metal bowl to eat from, I assure you it's worth the price.",
+        "image": "/images/bowl.jpg"
 
     }
   ]

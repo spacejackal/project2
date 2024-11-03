@@ -22,7 +22,7 @@ const CheckoutView = ({ setView, cart, clearCart, formData, setFormData }) => {
 
   return (
     <div>
-      <h2>Checkout</h2>
+      <h2 className='top'>Checkout</h2>
       <button onClick={() => setView('cart')}>Return to Cart</button>
 
       <h3>Order Summary</h3>

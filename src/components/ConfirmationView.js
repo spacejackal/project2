@@ -12,7 +12,7 @@ const ConfirmationView = ({ setView, clearCart,cart,formData }) => {
   console.log(formData);
   return (
     <div>
-      <h2>Order Confirmation</h2>
+      <h2 className='top'>Order Confirmation</h2>
       <p>Name: {formData.fullName}</p>
       <p>Card: {formData.card}</p>
       <p>Address: {formData.address1}, {formData.city}, {formData.state}, {formData.zip}</p>

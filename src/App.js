@@ -56,10 +56,8 @@ const App = () => {
       {view === 'confirmation' && (
         <ConfirmationView setView={setView} cart={cart} clearCart={clearCart} formData={formData}/>
       )}
-            <footer>
-        <p><strong>ComS 319</strong></p>
-        <p>Assignment 3</p>
-        <p>Jacob Leary, aaryamann dev sharma</p>
+            <footer className='footer'>
+        <p><strong>ComS 319,    Jacob Leary, Aaryamann dev Sharma</strong></p>
       </footer>
     </div>
   );
