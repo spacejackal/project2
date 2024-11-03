@@ -59,7 +59,7 @@ const App = () => {
             <footer>
         <p><strong>ComS 319</strong></p>
         <p>Assignment 3</p>
-        <p>Jacob Leary</p>
+        <p>Jacob Leary, </p>
       </footer>
     </div>
   );

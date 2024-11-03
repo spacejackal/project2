@@ -3,6 +3,8 @@ import './Style.css';
 
 
 const ConfirmationView = ({ setView, clearCart,cart,formData }) => {
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const taxTotal = total * 1.17;
   const handleNewOrder = () => {
     clearCart([]);
     setView('browse');
@@ -19,14 +21,17 @@ const ConfirmationView = ({ setView, clearCart,cart,formData }) => {
         <div>
           <h5>Purchased Items:</h5>
           {cart.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.name}</td>
-                  <td>    #{item.quantity}</td>
-                  <td>Total = ${(item.price * item.quantity).toFixed(2)}</td>
-                </tr>
+                <div key={item.id}>
+                  <p>
+                  <img src={item.image} alt={item.name} className='conProduct'></img>
+                    {item.name} ,      
+                        #{item.quantity},  
+                        Individual price: ${item.price},   
+                  </p>
+                </div>
               ))}
          
-          <h5>Total: $</h5>
+          <h5>Total: ${taxTotal} </h5>
           <button onClick={handleNewOrder}>New Order</button>
         </div>
       
