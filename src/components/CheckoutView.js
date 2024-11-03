@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import './Style.css';
 
-const CheckoutView = ({ setView, cart, clearCart }) => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    card: '',
-    address1: '',
-    address2: '',
-    city: '',
-    state: '',
-    zip: '',
-  });
+const CheckoutView = ({ setView, cart, clearCart, formData, setFormData }) => {
+  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +11,7 @@ const CheckoutView = ({ setView, cart, clearCart }) => {
 
 
   const handleSubmit = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
       //clearCart();
       setView('confirmation'); 
     
@@ -45,6 +36,7 @@ const CheckoutView = ({ setView, cart, clearCart }) => {
             name="fullName"
             value={formData.fullName}
             onChange={handleInputChange}
+            
           />
           
         </div>

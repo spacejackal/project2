@@ -27,7 +27,6 @@ const BrowseView = ({ setView, cart, addToCart, removeFromCart }) => {
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  console.log(cart);
 
   return (
     <div>

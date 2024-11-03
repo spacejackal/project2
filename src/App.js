@@ -22,6 +22,17 @@ const App = () => {
     });
   };
 
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    card: '',
+    address1: '',
+    address2: '',
+    city: '',
+    state: '',
+    zip: '',
+  });
+
 
   const removeFromCart = (productId) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
@@ -40,10 +51,10 @@ const App = () => {
         <CartView setView={setView} cart={cart} removeFromCart={removeFromCart} />
       )}
       {view === 'checkout' && (
-        <CheckoutView setView={setView} cart={cart} clearCart={clearCart} />
+        <CheckoutView setView={setView} cart={cart} clearCart={clearCart} formData={formData} setFormData={setFormData} />
       )}
       {view === 'confirmation' && (
-        <ConfirmationView setView={setView} />
+        <ConfirmationView setView={setView} cart={cart} clearCart={clearCart} formData={formData}/>
       )}
             <footer>
         <p><strong>ComS 319</strong></p>

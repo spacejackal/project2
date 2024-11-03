@@ -5,7 +5,6 @@ const CartView = ({ cart, setView, removeFromCart }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const taxTotal = total * 1.17;
 
-console.log(cart);
   return (
     <div>
       <h2 className='top'>Your Cart</h2>
