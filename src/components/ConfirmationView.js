@@ -13,7 +13,6 @@ const ConfirmationView = ({ setView, clearCart,cart,formData }) => {
   return (
     <div>
       <h2>Order Confirmation</h2>
-      <p>Address: {formData.address1}</p>
       <p>Name: {formData.fullName}</p>
       <p>Card: {formData.card}</p>
       <p>Address: {formData.address1}, {formData.city}, {formData.state}, {formData.zip}</p>
@@ -31,7 +30,7 @@ const ConfirmationView = ({ setView, clearCart,cart,formData }) => {
                 </div>
               ))}
          
-          <h5>Total: ${taxTotal} </h5>
+          <h5>Total: ${taxTotal} </h5> 
           <button onClick={handleNewOrder}>New Order</button>
         </div>
       
